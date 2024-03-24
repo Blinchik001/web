@@ -1,0 +1,86 @@
+body{
+    background-image: url(../images/backgr-night.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: "Gill Sans", sans-serif;
+    color: #bebebe;
+}
+
+.container{
+    width: 80%;
+    background-color: rgba(93, 93, 93, 0.5);
+    height: 100%;
+    margin: auto;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 14px 9px rgba(34, 60, 80, 0.2);
+}
+
+.container-form.title{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.container-form-element.button{
+    width: 30%;
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    border-radius: 3px;
+    border: 0px;
+    background: rgb(55, 148, 146);
+    box-shadow: 0 -3px rgb(26, 68, 69) inset;
+    transition: 0.2s;
+}
+.container-form-element.button:hover { background: rgb(26, 68, 69); }
+.container-form-element.button:active {
+    background: rgb(39, 112, 111);
+    box-shadow: 0 3px rgb(39, 112, 111) inset;
+}
+
+.container-form-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color: rgba(142, 157, 212, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 25px;
+}
+
+.container-form-element{
+    width: 55%;
+    font-size: 25px;
+}
+
+.container-form-element.label{
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.input-error{
+    border-color: red;
+}
+
+.btn-change-theme{
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgba(142, 157, 212, 0);
+    background-image: url("../images/moon.svg");
+    background-size: cover;
+}
+
+
