@@ -5,7 +5,7 @@
   <title> Registration Form</title>
   <meta name="description" content="">
   <meta name="keywords" content=" ">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="public/styles/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -14,7 +14,7 @@
 <body>
 
 <div class="container" style="height:auto">
-  <form>
+  <form action="/reg-data" method="post">
     <div class="container-form title">
       REGISTRATION FORM
     </div>
@@ -23,11 +23,11 @@
         <h3>Registration</h3>
 
         <label for="container-form-content-input-login" class="container-form-element label login">Login</label>
-        <input id="container-form-content-input-login" class="container-form-element input login" type="text" placeholder=" Enter login"><br>
+        <input id="container-form-content-input-login" class="container-form-element input login" type="text" placeholder=" Enter login" name="userlogin"><br>
         <div id="errorMessage">
         </div>
         <label for="container-form-content-input-password" class="container-form-element label password">Password</label>
-        <input id="container-form-content-input-password" class="container-form-element input password" type="password" placeholder="Enter password"><br>
+        <input id="container-form-content-input-password" class="container-form-element input password" type="password" placeholder="Enter password" name="userpassword"><br>
         <label for="container-form-content-selection-type" class="container-form-element label type">Select user type</label>
         <select id="container-form-content-selection-type" class="container-form-element selection type">
           <option value="Admin">Admin</option>
@@ -46,6 +46,6 @@
   <br>
   <br>
 </div>
-<script src="js/form-processing.js"></script>
+<script src="public/js/form-processing.js"></script>
 </body>
 </html>
