@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title> Registration Form</title>
+  <meta name="description" content="">
+  <meta name="keywords" content=" ">
+  <link rel="stylesheet" href="public/styles/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </head>
 <body>
-$END$
+
+<div class="container" style="height:auto">
+  <form action="/reg-data" method="post">
+    <div class="container-form title">
+      REGISTRATION FORM
+    </div>
+    <div>
+      <div class="container-form-content">
+        <h3>Registration</h3>
+
+        <label for="container-form-content-input-login" class="container-form-element label login">Login</label>
+        <input id="container-form-content-input-login" class="container-form-element input login" type="text" placeholder=" Enter login" name="userlogin"><br>
+        <div id="errorMessage">
+        </div>
+        <label for="container-form-content-input-password" class="container-form-element label password">Password</label>
+        <input id="container-form-content-input-password" class="container-form-element input password" type="password" placeholder="Enter password" name="userpassword"><br>
+        <label for="container-form-content-selection-type" class="container-form-element label type">Select user type</label>
+        <select id="container-form-content-selection-type" class="container-form-element selection type">
+          <option value="Admin">Admin</option>
+          <option value="Moderator">Moderator</option>
+          <option value="User">User</option>
+        </select>
+        <br>
+        <input type="submit"  value="Регистрация" class="container-form-element button" id="container-form-content-button">
+
+      </div>
+    </div>
+  </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<script src="public/js/form-processing.js"></script>
 </body>
 </html>
