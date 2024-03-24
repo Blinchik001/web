@@ -1,13 +1,14 @@
 body{
-    background-image: url(../images/backgr1.jpg);
+    background-image: url(../images/backgr-night.png);
     background-repeat: no-repeat;
     background-size:cover;
     font-family: "Gill Sans", sans-serif;
+    color: #bebebe;
 }
 
 .container{
     width: 80%;
-    background-color: rgba(247, 247, 247, 0.8);
+    background-color: rgba(93, 93, 93, 0.5);
     height: 100%;
     margin: auto;
     border-radius: 50px 50px 50px 50px;
@@ -32,7 +33,6 @@ body{
     background: rgb(55, 148, 146);
     box-shadow: 0 -3px rgb(26, 68, 69) inset;
     transition: 0.2s;
-
 }
 .container-form-element.button:hover { background: rgb(26, 68, 69); }
 .container-form-element.button:active {
@@ -79,7 +79,8 @@ body{
     top: 15px;
     border-radius: 50px 50px 50px 50px;
     background-color: rgba(142, 157, 212, 0);
-    background-image: url("../images/sun.svg");
+    background-image: url("../images/moon.svg");
     background-size: cover;
 }
+
 
